@@ -1,47 +1,48 @@
 # Fake_News_Detector
 
-# 📊 Churn Prediction - Machine Learning Project
+# 📰 Fake News Detection using NLP
 
-This project predicts customer churn using a machine learning model trained on a telecom dataset. It is a simple CLI-based application written in Python.
+This project uses Natural Language Processing (NLP) techniques to detect whether a news article is **Fake** or **Real**. It is built using Python and machine learning libraries such as **scikit-learn** and **nltk**.
 
 ---
 
-## 🔍 Features
+## 📌 Project Overview
 
-- Preprocesses telecom customer data.
-- Trains a machine learning model (Logistic Regression).
-- Predicts whether a customer is likely to churn.
+- **Goal**: Classify news articles as fake or real based on their content.
+- **Approach**: Data preprocessing, TF-IDF vectorization, and training a Passive Aggressive Classifier.
+- **Language**: Python
+- **Libraries**: `pandas`, `nltk`, `sklearn`
+
+---
+
+## 📁 Dataset
+
+We have used publicly available fake/real news datasets in CSV format.
+
+### 🔗 Google Drive Dataset Links
+
+- [🟢 Dataset Link 1](https://drive.google.com/file/d/1D5Pl8HgqCZoVJiHsVhcpA0vPFQIRWPEM/view?usp=drive_link)
+- [🟢 Dataset Link 2](https://drive.google.com/file/d/1iAY8eIPci5GcjwvWsqJMHT4xr4rL8fmM/view?usp=drive_link)
+
+Please download and place the `.csv` files in the project directory.
 
 ---
 
 ## 🧠 Model Details
 
-- **Algorithm:** Logistic Regression
-- **Libraries Used:** `pandas`, `scikit-learn`, `numpy`
+| Step                | Description                                      |
+|---------------------|--------------------------------------------------|
+| Preprocessing        | Lowercasing, punctuation & stopword removal     |
+| Vectorization        | TF-IDF (Term Frequency-Inverse Document Frequency) |
+| Classifier           | Passive Aggressive Classifier (from `sklearn`)  |
+| Output               | Prediction: `FAKE` or `REAL`                    |
 
 ---
 
-## 📥 Dataset Downloads
+## 🛠️ How to Run
 
-The datasets are hosted on Google Drive. Please download and extract both ZIP files before running the code.
+1. Clone or download this repository.
+2. Install dependencies:
+   ```bash
+   pip install pandas scikit-learn nltk
 
-- 📁 [Churn Dataset ZIP - Part 1](https://drive.google.com/file/d/1D5Pl8HgqCZoVJiHsVhcpA0vPFQIRWPEM/view?usp=drive_link)
-- 📁 [Churn Dataset ZIP - Part 2](https://drive.google.com/file/d/1iAY8eIPci5GcjwvWsqJMHT4xr4rL8fmM/view?usp=drive_link)
-
-> Make sure to extract both ZIPs and place the CSV files in the correct folder (`churn_dataset/` or wherever the script expects them).
-
----
-
-## 📦 Setup Instructions
-
-### ✅ Requirements:
-
-- Python 3.x
-- pandas
-- scikit-learn
-- numpy
-
-Install them using:
-
-```bash
-pip install pandas scikit-learn numpy
